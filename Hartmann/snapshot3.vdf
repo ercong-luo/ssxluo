@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<Metadata BlockSize="32 32 32"  DimensionLength="50 4 100"  FilterCoefficients="1"  LiftingCoefficients="1"  MSBFirst="1"  NumTransforms="2"  VDFVersion="5" >
+<GridPermutation Type="Long">
+  0 1 2 
+</GridPermutation>
+<NumTimeSteps Type="Long">
+  40 
+</NumTimeSteps>
+<PeriodicBoundary Type="Long">
+  0 0 0 
+</PeriodicBoundary>
+<Extents Type="Double">
+  0 0 0 1 1 1 
+</Extents>
+<MissingValue Type="Double">
+  
+</MissingValue>
+<Comment Type="String">
+  
+</Comment>
+<CoordinateSystem Type="String">
+  cartesian
+</CoordinateSystem>
+<CoordinateVariables Type="String">
+  NONE NONE ELEVATION
+</CoordinateVariables>
+<GridType Type="String">
+  regular
+</GridType>
+<VariableNames Type="String">
+  Ay Bx Bz vx vy vz
+</VariableNames>
+<Variables2DXY Type="String">
+  
+</Variables2DXY>
+<Variables2DXZ Type="String">
+  
+</Variables2DXZ>
+<Variables2DYZ Type="String">
+  
+</Variables2DYZ>
+<Variables3D Type="String">
+  Ay Bx Bz vx vy vz
+</Variables3D>
+<TimeStep>
+<UserTime Type="Double">
+  0 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0000
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  0
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0000
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0000
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0000
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0000
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0000
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0000
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  1 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0001
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  1
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0001
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0001
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0001
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0001
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0001
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0001
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  2 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0002
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  2
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0002
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0002
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0002
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0002
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0002
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0002
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  3 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0003
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  3
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0003
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0003
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0003
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0003
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0003
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0003
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  4 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0004
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  4
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0004
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0004
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0004
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0004
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0004
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0004
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  5 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0005
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  5
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0005
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0005
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0005
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0005
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0005
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0005
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  6 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0006
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  6
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0006
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0006
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0006
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0006
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0006
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0006
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  7 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0007
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  7
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0007
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0007
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0007
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0007
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0007
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0007
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  8 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0008
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  8
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0008
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0008
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0008
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0008
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0008
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0008
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  9 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0009
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  9
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0009
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0009
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0009
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0009
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0009
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0009
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  10 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0010
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  10
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0010
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0010
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0010
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0010
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0010
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0010
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  11 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0011
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  11
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0011
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0011
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0011
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0011
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0011
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0011
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  12 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0012
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  12
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0012
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0012
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0012
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0012
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0012
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0012
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  13 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0013
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  13
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0013
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0013
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0013
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0013
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0013
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0013
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  14 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0014
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  14
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0014
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0014
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0014
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0014
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0014
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0014
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  15 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0015
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  15
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0015
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0015
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0015
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0015
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0015
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0015
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  16 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0016
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  16
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0016
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0016
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0016
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0016
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0016
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0016
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  17 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0017
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  17
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0017
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0017
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0017
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0017
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0017
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0017
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  18 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0018
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  18
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0018
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0018
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0018
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0018
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0018
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0018
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  19 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0019
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  19
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0019
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0019
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0019
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0019
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0019
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0019
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  20 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0020
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  20
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0020
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0020
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0020
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0020
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0020
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0020
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  21 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0021
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  21
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0021
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0021
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0021
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0021
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0021
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0021
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  22 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0022
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  22
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0022
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0022
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0022
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0022
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0022
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0022
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  23 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0023
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  23
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0023
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0023
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0023
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0023
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0023
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0023
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  24 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0024
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  24
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0024
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0024
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0024
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0024
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0024
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0024
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  25 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0025
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  25
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0025
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0025
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0025
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0025
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0025
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0025
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  26 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0026
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  26
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0026
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0026
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0026
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0026
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0026
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0026
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  27 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0027
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  27
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0027
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0027
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0027
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0027
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0027
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0027
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  28 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0028
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  28
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0028
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0028
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0028
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0028
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0028
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0028
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  29 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0029
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  29
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0029
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0029
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0029
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0029
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0029
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0029
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  30 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0030
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  30
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0030
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0030
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0030
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0030
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0030
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0030
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  31 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0031
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  31
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0031
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0031
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0031
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0031
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0031
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0031
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  32 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0032
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  32
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0032
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0032
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0032
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0032
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0032
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0032
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  33 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0033
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  33
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0033
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0033
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0033
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0033
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0033
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0033
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  34 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0034
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  34
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0034
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0034
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0034
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0034
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0034
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0034
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  35 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0035
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  35
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0035
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0035
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0035
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0035
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0035
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0035
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  36 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0036
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  36
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0036
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0036
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0036
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0036
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0036
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0036
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  37 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0037
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  37
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0037
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0037
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0037
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0037
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0037
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0037
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  38 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0038
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  38
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0038
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0038
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0038
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0038
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0038
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0038
+</BasePath>
+</vz>
+</TimeStep>
+<TimeStep>
+<UserTime Type="Double">
+  39 
+</UserTime>
+<AuxBasePath Type="String">
+  auxdata/auxdata.0039
+</AuxBasePath>
+<UserTimeStampString Type="String">
+  39
+</UserTimeStampString>
+<Ay>
+<BasePath Type="String">
+  Ay/Ay.0039
+</BasePath>
+</Ay>
+<Bx>
+<BasePath Type="String">
+  Bx/Bx.0039
+</BasePath>
+</Bx>
+<Bz>
+<BasePath Type="String">
+  Bz/Bz.0039
+</BasePath>
+</Bz>
+<vx>
+<BasePath Type="String">
+  vx/vx.0039
+</BasePath>
+</vx>
+<vy>
+<BasePath Type="String">
+  vy/vy.0039
+</BasePath>
+</vy>
+<vz>
+<BasePath Type="String">
+  vz/vz.0039
+</BasePath>
+</vz>
+</TimeStep>
+</Metadata>
