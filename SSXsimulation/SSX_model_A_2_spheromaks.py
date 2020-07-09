@@ -55,8 +55,8 @@ length = 10
 # for 3D runs, you can divide the work up over two dimensions (x and y).
 # The product of the two elements of mesh *must* equal the number
 # of cores used.
-mesh = None
-#mesh = [14,12]
+# mesh = None
+mesh = [14,12]
 
 kappa = 0.01
 mu = 0.05
