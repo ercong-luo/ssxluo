@@ -142,8 +142,8 @@ solver = SSX.build_solver(de.timesteppers.RK443)
 dt = 1e-4
 
 # Integration parameters
-solver.stop_sim_time = 20
-solver.stop_wall_time = 60*60*40
+solver.stop_sim_time = 50
+solver.stop_wall_time = 60*60*9
 solver.stop_iteration = np.inf
 
 
