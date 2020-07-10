@@ -64,9 +64,11 @@ eta = 0.001
 rho0 = 1
 gamma = 5./3.
 
-x = de.Fourier('x', nx, interval=(-r, r))
-y = de.Fourier('y', ny, interval=(-r, r))
-z = de.Fourier('z', nz, interval=(0,length))
+x = de.SinCos('x', nx, interval=(-r, r),dealias=3/2)
+y = de.SinCos('y', ny, interval=(-r, r),dealias=3/2)
+left = de.Chebyshev('z1', nz/2, interval = (0,length/2),dealias=3/2)
+right = de.Chebyshev('z2', nz/2, interval=(length/2,length),dealias=3/2)
+z = de.Compound('z',(left, right)) #compound z basis so that the basis functions are dense at the merging point
 
 domain = de.Domain([x,y,z],grid_dtype='float', mesh = mesh)
 
@@ -143,7 +145,8 @@ dt = 1e-4
 
 # Integration parameters
 solver.stop_sim_time = 50
-solver.stop_wall_time = 60*60*9
+solver.stop_wall_time = 60 #trial
+# solver.stop_wall_time = 60*60*9
 solver.stop_iteration = np.inf
 
 
