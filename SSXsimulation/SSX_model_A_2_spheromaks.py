@@ -1,12 +1,15 @@
 """SSX_model_A.py
 
+Last edited by Ercong (Tony) Luo '21. 
+
 This is the *simplest* model we will consider for modelling spheromaks evolving in the SSX wind tunnel.
 
 Major simplificiations fall in two categories
 
 Geometry
 --------
-We consider a square duct using parity bases (sin/cos) in all directions.
+We consider a square duct using parity bases (sin/cos) in x,y directions. 
+The z direction basis is with a compound Chebyshev basis, so that there are more sampling points in the middle. 
 
 Equations
 ---------
@@ -71,7 +74,7 @@ y = de.SinCos('y', ny, interval=(-r, r),dealias=3/2)
 left = de.Chebyshev('z1', nz/2, interval = (0,length/2),dealias=3/2)
 right = de.Chebyshev('z2', nz/2, interval=(length/2,length),dealias=3/2)
 z = de.Compound('z',(left, right)) #compound z basis so that the basis functions are dense at the merging point
-domain = de.Domain([x,y,z],grid_dtype='float', mesh = mesh)
+domain = de.Domain([x,y,z],grid_dtype=np.float64, mesh = mesh)
 
 # set up IVP
 SSX = de.IVP(domain, variables=['lnrho','T', 'vx', 'vy', 'vz', 'Ax', 'Ay', 'Az', 'phi'])
@@ -103,6 +106,7 @@ SSX.parameters['gamma'] = gamma
 SSX.substitutions['divv'] = "dx(vx) + dy(vy) + dz(vz)"
 SSX.substitutions['vdotgrad(A)'] = "vx*dx(A) + vy*dy(A) + vz*dz(A)"
 SSX.substitutions['Bdotgrad(A)'] = "Bx*dx(A) + By*dy(A) + Bz*dz(A)"
+SSX.substitutions['vdotgrad(lnrho)'] = "vx*dx(lnrho) + vy*dy(lnrho) + vz*dz(lnrho)" #07/11/20
 SSX.substitutions['Lap(A)'] = "dx(dx(A)) + dy(dy(A)) + dz(dz(A))"
 SSX.substitutions['Bx'] = "dy(Az) - dz(Ay)"
 SSX.substitutions['By'] = "dz(Ax) - dx(Az)"

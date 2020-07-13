@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -p RM
-#SBATCH -t 12:00:00
+#SBATCH -t 00:05:00
 #SBATCH -N 6
 #SBATCH --ntasks-per-node 28
 #SBATCH --mail-user=eluo1@swarthmore.edu
