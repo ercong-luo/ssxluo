@@ -51,7 +51,7 @@ logger = logging.getLogger(__name__)
 # should be a multiple of 28.
 nx = 28
 ny = 24
-nz = 180
+nz = 180 #gotta be divisible by 2
 r = 1
 length = 10
 
@@ -71,31 +71,34 @@ gamma = 5./3.
 # basis & domain
 x = de.SinCos('x', nx, interval=(-r, r),dealias=3/2)
 y = de.SinCos('y', ny, interval=(-r, r),dealias=3/2)
-left = de.Chebyshev('z1', nz/2, interval = (0,length/2),dealias=3/2)
-right = de.Chebyshev('z2', nz/2, interval=(length/2,length),dealias=3/2)
-z = de.Compound('z',(left, right)) #compound z basis so that the basis functions are dense at the merging point
+
+# z compound basis is buggy for some reason, but a SinCos basis for z works
+# left = de.Chebyshev('z1', nz/2, interval = (0,length/2),dealias=3/2)
+# right = de.Chebyshev('z2', nz/2, interval=(length/2,length),dealias=3/2)
+# z = de.Compound('z',(left, right)) #compound z basis so that the basis functions are dense at the merging point
+z = de.SinCos('z', nz, interval=(0,length),dealias=3/2)
 domain = de.Domain([x,y,z],grid_dtype=np.float64, mesh = mesh)
 
 # set up IVP
 SSX = de.IVP(domain, variables=['lnrho','T', 'vx', 'vy', 'vz', 'Ax', 'Ay', 'Az', 'phi'])
 
-#SSX.meta['T','lnrho']['x', 'y', 'z']['parity'] = 1
-#SSX.meta['eta1']['x', 'y', 'z']['parity'] = 1
-#SSX.meta['phi']['x', 'y', 'z']['parity'] = -1
+SSX.meta['T','lnrho']['x', 'y', 'z']['parity'] = 1
+# SSX.meta['eta1']['x', 'y', 'z']['parity'] = 1
+SSX.meta['phi']['x', 'y', 'z']['parity'] = -1
 
-#SSX.meta['vx']['y', 'z']['parity'] =  1
-#SSX.meta['vx']['x']['parity'] = -1
-#SSX.meta['vy']['x', 'z']['parity'] = 1
-#SSX.meta['vy']['y']['parity'] = -1
-#SSX.meta['vz']['x', 'y']['parity'] = 1
-#SSX.meta['vz']['z']['parity'] = -1
+SSX.meta['vx']['y', 'z']['parity'] =  1
+SSX.meta['vx']['x']['parity'] = -1
+SSX.meta['vy']['x', 'z']['parity'] = 1
+SSX.meta['vy']['y']['parity'] = -1
+SSX.meta['vz']['x', 'y']['parity'] = 1
+SSX.meta['vz']['z']['parity'] = -1
 
-#SSX.meta['Ax']['y', 'z']['parity'] =  -1
-#SSX.meta['Ax']['x']['parity'] = 1
-#SSX.meta['Ay']['x', 'z']['parity'] = -1
-#SSX.meta['Ay']['y']['parity'] = 1
-#SSX.meta['Az']['x', 'y']['parity'] = -1
-#SSX.meta['Az']['z']['parity'] = 1
+SSX.meta['Ax']['y', 'z']['parity'] =  -1
+SSX.meta['Ax']['x']['parity'] = 1
+SSX.meta['Ay']['x', 'z']['parity'] = -1
+SSX.meta['Ay']['y']['parity'] = 1
+SSX.meta['Az']['x', 'y']['parity'] = -1
+SSX.meta['Az']['z']['parity'] = 1
 
 SSX.parameters['mu'] = mu
 SSX.parameters['chi'] = kappa/rho0
@@ -151,7 +154,8 @@ dt = 1e-4
 
 # Simulation Time
 solver.stop_sim_time = 50
-solver.stop_wall_time = 60*60*10
+# solver.stop_wall_time = 60*60*10
+solver.stop_wall_time = 60
 solver.stop_iteration = np.inf
 
 
