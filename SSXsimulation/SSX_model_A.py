@@ -140,15 +140,15 @@ SSX.add_equation("dx(Ax) + dy(Ay) + dz(Az) = 0", condition = "(nx != 0) or (ny !
 SSX.add_equation("phi = 0", condition = "(nx == 0) and (ny == 0) and (nz == 0)")
 
 # enforce B = Curl A = 0 at boundary, added
-# SSX.add_equation("Bx = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
-# SSX.add_equation("By = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
-# SSX.add_equation("Bz = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
-SSX.add_bc("left(Bx) = 0")
-SSX.add_bc("left(By) = 0")
-SSX.add_bc("left(Bz) = 0")
-SSX.add_bc("right(Bx) = 0")
-SSX.add_bc("right(By) = 0")
-SSX.add_bc("right(Bz) = 0")
+# SSX.add_equation("Bx = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0)")
+# SSX.add_equation("By = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0)")
+# SSX.add_equation("Bz = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0)")
+# SSX.add_bc("left(Bx) = 0")
+# SSX.add_bc("left(By) = 0")
+# SSX.add_bc("left(Bz) = 0")
+# SSX.add_bc("right(Bx) = 0")
+# SSX.add_bc("right(By) = 0")
+# SSX.add_bc("right(Bz) = 0")
 
 # Energy
 SSX.add_equation("dt(T) - (gamma - 1) * chi*Lap(T) = - (gamma - 1) * T * divv  - vdotgrad(T) + (gamma - 1)*eta*J2")
@@ -192,7 +192,7 @@ T0 = 0.1
 #-----------------------------------------------Spheromak Initial Conditions-------------------------------------------------------------#
 ##########################################################################################################################################
 ## Spheromak initial condition
-aa_x, aa_y, aa_z = spheromak_A(domain, center=(0,0, 0), R=R, L=L)
+aa_x, aa_y, aa_z = spheromak_A(domain, center=(0,0, R/2), R=R, L=L)
 # The vector potential is subject to some perturbation.
 Ax['g'] = aa_x*(1 + 0.5*x*np.exp(-z**2))
 Ay['g'] = aa_y*(1 + 0.5*x*np.exp(-z**2))
