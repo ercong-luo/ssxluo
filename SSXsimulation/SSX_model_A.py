@@ -46,8 +46,8 @@ logger = logging.getLogger(__name__)
 # for optimal efficiency: nx should be divisible by mesh[0], ny by mesh[1], and
 # nx should be close to ny. Bridges nodes have 28 cores, so mesh[0]*mesh[1]
 # should be a multiple of 28.
-nx = 28*2
-ny = 24*2
+nx = 28
+ny = 24
 nz = 180*2
 r = 1
 length = 10
@@ -139,6 +139,16 @@ SSX.add_equation("dt(Az) + dz(phi) = - eta*jz + vx*By - vy*Bx")
 SSX.add_equation("dx(Ax) + dy(Ay) + dz(Az) = 0", condition = "(nx != 0) or (ny != 0) or (nz != 0)")
 SSX.add_equation("phi = 0", condition = "(nx == 0) and (ny == 0) and (nz == 0)")
 
+# enforce B = Curl A = 0 at boundary, added
+# SSX.add_equation("Bx = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
+# SSX.add_equation("By = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
+# SSX.add_equation("Bz = 0", condition = "(nx == 0) or (ny == 0) or (nz == 0) or (nx == 28-1) or (ny == 24-1) or (nz == 180*2-1)")
+SSX.add_bc("left(Bx) = 0")
+SSX.add_bc("left(By) = 0")
+SSX.add_bc("left(Bz) = 0")
+SSX.add_bc("right(Bx) = 0")
+SSX.add_bc("right(By) = 0")
+SSX.add_bc("right(Bz) = 0")
 
 # Energy
 SSX.add_equation("dt(T) - (gamma - 1) * chi*Lap(T) = - (gamma - 1) * T * divv  - vdotgrad(T) + (gamma - 1)*eta*J2")
@@ -153,7 +163,7 @@ dt = 1e-4
 
 # Integration parameters
 solver.stop_sim_time = 50
-solver.stop_wall_time = 60*60*8
+solver.stop_wall_time = 60*60*12
 solver.stop_iteration = np.inf
 
 

@@ -109,7 +109,7 @@ SSX.parameters['gamma'] = gamma
 SSX.substitutions['divv'] = "dx(vx) + dy(vy) + dz(vz)"
 SSX.substitutions['vdotgrad(A)'] = "vx*dx(A) + vy*dy(A) + vz*dz(A)"
 SSX.substitutions['Bdotgrad(A)'] = "Bx*dx(A) + By*dy(A) + Bz*dz(A)"
-SSX.substitutions['vdotgrad(lnrho)'] = "vx*dx(lnrho) + vy*dy(lnrho) + vz*dz(lnrho)" #07/11/20
+# SSX.substitutions['vdotgrad(lnrho)'] = "vx*dx(lnrho) + vy*dy(lnrho) + vz*dz(lnrho)" #07/11/20
 SSX.substitutions['Lap(A)'] = "dx(dx(A)) + dy(dy(A)) + dz(dz(A))"
 SSX.substitutions['Bx'] = "dy(Az) - dz(Ay)"
 SSX.substitutions['By'] = "dz(Ax) - dx(Az)"
@@ -140,7 +140,7 @@ SSX.add_equation("dt(vz) + dz(T) - nu*Lap(vz) = T*dz(lnrho) - vdotgrad(vz) + (jx
 SSX.add_equation("dt(Ax) + dx(phi) = - eta*jx + vy*Bz - vz*By")
 SSX.add_equation("dt(Ay) + dy(phi) = - eta*jy + vz*Bx - vx*Bz")
 SSX.add_equation("dt(Az) + dz(phi) = - eta*jz + vx*By - vy*Bx")
-SSX.add_equation("dx(Ax) + dy(Ay) + dz(Az) = 0", condition = "(nx != 0) or (ny != 0) or (nz != 0)")
+SSX.add_equation("dx(Ax) + dy(Ay) + dz(Az) = 0", condition = "(nx != 0) or (ny != 0) or (nz != 0)") #coulomb gauge
 SSX.add_equation("phi = 0", condition = "(nx == 0) and (ny == 0) and (nz == 0)")
 
 
@@ -154,8 +154,8 @@ dt = 1e-4
 
 # Simulation Time
 solver.stop_sim_time = 50
-# solver.stop_wall_time = 60*60*10
-solver.stop_wall_time = 60
+# solver.stop_wall_time = 60*60*12
+solver.stop_wall_time = 60*30
 solver.stop_iteration = np.inf
 
 
