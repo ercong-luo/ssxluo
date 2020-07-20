@@ -48,7 +48,7 @@ logger = logging.getLogger(__name__)
 # should be a multiple of 28.
 nx = 28
 ny = 24
-nz = 180*2
+nz = 360 #initially 180
 r = 1
 length = 10
 
@@ -163,7 +163,7 @@ dt = 1e-4
 
 # Integration parameters
 solver.stop_sim_time = 50
-solver.stop_wall_time = 60*60*12
+solver.stop_wall_time = 60*60*15
 solver.stop_iteration = np.inf
 
 
@@ -194,12 +194,12 @@ T0 = 0.1
 ## Spheromak initial condition
 aa_x, aa_y, aa_z = spheromak_A(domain, center=(0,0, R/2), R=R, L=L)
 # The vector potential is subject to some perturbation.
-Ax['g'] = aa_x*(1 + 0.5*x*np.exp(-z**2))
-Ay['g'] = aa_y*(1 + 0.5*x*np.exp(-z**2))
-Az['g'] = aa_z*(1 + 0.5*x*np.exp(-z**2))
+Ax['g'] = aa_x*(1 + 0.5*x*np.exp(-(z-R/2)**2))
+Ay['g'] = aa_y*(1 + 0.5*x*np.exp(-(z-R/2)**2))
+Az['g'] = aa_z*(1 + 0.5*x*np.exp(-(z-R/2)**2))
 
 max_vel = 0.1
-vz['g'] = -np.tanh(8*z - 15)*max_vel/2 + max_vel/2
+vz['g'] = -np.tanh(8*(z-R/2) - 15)*max_vel/2 + max_vel/2
 
 
 # Plasma number density initialization.
@@ -249,7 +249,7 @@ T['g'] = T0 * rho0['g']**(gamma - 1)
 # analysis output
 #data_dir = './'+sys.argv[0].split('.py')[0]
 wall_dt_checkpoints = 60*55
-output_cadence = .1 # This is in simulation time units
+output_cadence = .3 # This is in simulation time units
 
 '''checkpoint = solver.evaluator.add_file_handler('checkpoints2', max_writes=1, wall_dt=wall_dt_checkpoints, mode='overwrite')
     checkpoint.add_system(solver.state, layout='c')'''
