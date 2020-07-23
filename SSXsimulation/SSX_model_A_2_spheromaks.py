@@ -51,7 +51,7 @@ logger = logging.getLogger(__name__)
 # should be a multiple of 28.
 nx = 28
 ny = 24
-nz = 180 #gotta be divisible by 2
+nz = 180 
 r = 1
 length = 10
 
@@ -154,8 +154,8 @@ dt = 1e-4
 
 # Simulation Time
 solver.stop_sim_time = 50
-# solver.stop_wall_time = 60*60*12
-solver.stop_wall_time = 60*30
+solver.stop_wall_time = 60*60*12
+# solver.stop_wall_time = 60*30
 solver.stop_iteration = np.inf
 
 
